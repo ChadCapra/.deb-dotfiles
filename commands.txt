@@ -1,0 +1,16 @@
+# Set up Rust
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+# Set up NeoVim (Pre-reqs than build source)
+```
+sudo apt-get install ninja-build gettext cmake unzip curl
+git clone https://github.com/neovim/neovim
+cd neovim
+git checkout stable
+
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+```
+
